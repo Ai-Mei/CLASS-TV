@@ -55,6 +55,7 @@ TV_1 = TV(30, 3, True)
 TV_2 = TV(3, 2, True)
 
 # Print the necessary data.
+print()
 print("The TV 1's channel is", TV_1.channel, "and volume level", TV_1.volume_level, ".")
 print("The TV 2's channel is", TV_2.channel, "and volume level", TV_2.volume_level,".")
 
@@ -113,7 +114,57 @@ print("\n"+"*"*90)
 
 # Creation of new objects:
 # Get the name of the object
+tv_name = input("Please input a name for your TV: ")
+
 # Get the channel of the object
+while True:
+    try:
+        channel = int(input("Input the channel [1-120]: "))
+        if channel > 120:
+            raise Exception("Sorry, channels are 1-120 only.")
+        else:
+            break
+    except ValueError:
+        print("Input error.")
+    except Exception as e:
+        print("Error:", e)
+        continue    
+    except ValueError:
+        print("Input error.")
+        continue
+
 # Get the volume level of the object
+while True:
+    try:
+        volume_level = int(input("Input the volume level [1-7]: "))
+        if volume_level > 7:
+            raise Exception("Sorry, volume level is only 1-7 only.")
+        else:
+            break
+    except ValueError:
+        print("Input error.")
+    except Exception as e:
+        print("Error:", e)
+        continue    
+    except ValueError:
+        print("Input error.")
+        continue
+
 # Ask the user whether the object is on or off
+while True:
+    user_input = input("Please type in True if the TV is on and False if the TV is off: ")
+    if user_input.lower() == "true":
+        on = True
+        break
+    elif user_input.lower() == "false":
+        on = False
+        break
+    else:
+        print("Input Error, type in only True or False.")
+        continue
+
+
+
+
 # Make the object.
+tv_name = TV(channel, volume_level, on)
