@@ -109,3 +109,11 @@ print("\n"+"*"*90)
 print("When the TV is turned off:")
 TV_1.TurnOff()
 print("\n"+"*"*90)
+
+
+# Creation of new objects:
+# Get the name of the object
+# Get the channel of the object
+# Get the volume level of the object
+# Ask the user whether the object is on or off
+# Make the object.
