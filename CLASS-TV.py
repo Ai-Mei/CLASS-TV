@@ -57,3 +57,55 @@ TV_2 = TV(3, 2, True)
 # Print the necessary data.
 print("The TV 1's channel is", TV_1.channel, "and volume level", TV_1.volume_level, ".")
 print("The TV 2's channel is", TV_2.channel, "and volume level", TV_2.volume_level,".")
+
+
+# Test Driver
+print()
+print("📺-🔌-🎮-"*10)
+print("Test Driver".center(90))
+print("📺-🔌-🎮-"*10)
+print()
+TV_1 = TV(30, 3, True)
+TV_2 = TV(3, 2, True)
+
+
+print("\n"+"*"*90)
+print("When the TV is Turned on: ")
+TV_1.TurnOn()
+
+print("*"*90)
+print("Get the channel: ")
+TV_1.GetChannel()
+
+print("\n"+"*"*90)
+print("Set the channel: (In this test, to channel 4)")
+TV_1.SetChannel(4)
+
+print("\n"+"*"*90)
+print("Get the volume level: ")
+TV_1.GetVolume()
+
+print("\n"+"*"*90)
+print("Set the volume level: (In this test, to 7)")
+TV_1.SetVolume(7)
+
+print("\n"+"*"*90)
+print("Channel up: ")
+TV_1.ChannelUp()
+
+print("\n"+"*"*90)
+print("Channel down: ")
+TV_1.ChannelDown()
+
+print("\n"+"*"*90)
+print("Increase volume level: ")
+TV_1.VolumeUp()
+
+print("\n"+"*"*90)
+print("Decrease volume level: ")
+TV_1.VolumeDown()
+
+print("\n"+"*"*90)
+print("When the TV is turned off:")
+TV_1.TurnOff()
+print("\n"+"*"*90)
