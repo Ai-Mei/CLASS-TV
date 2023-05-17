@@ -14,8 +14,8 @@ class TV:
 # TurnOff()
     def TurnOff(self):
         self.on = False
-        self.channel = 0
-        self.volume_level = 0
+        self.channel = None
+        self.volume_level = None
         print("\033[0;31mThe television is currently turned off.\n\033[0;31mChannel: \033[4;30m",self.channel, "\n\033[0;31mVolume Level: \033[4;30m", self.volume_level, "\033[0m")
 # GetChannel()
     def GetChannel(self):
